@@ -1,11 +1,11 @@
 import BlueCurrentLogo from "../assets/img/blue-current-logo-blue-v-2.svg";
+import MotorhuisLogo from "../assets/img/powered-by-motorhuis.svg";
 
 const Header = () => {
   return (
     <header>
       <div>
-        <p>powered by</p>
-        <p>motorhuis</p>
+        <img src={MotorhuisLogo}></img>
       </div>
       <div>
         <img src={BlueCurrentLogo} alt="Blue Current"></img>

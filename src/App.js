@@ -1,4 +1,5 @@
 import './App.scss';
+import './assets/style/sass/main.scss';
 import Header from './components/Header';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        
+
       </main>
     </div>
   );
