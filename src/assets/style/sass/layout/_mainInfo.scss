@@ -3,4 +3,17 @@
 .mainInfo {
   width: 23.75rem;
   padding-top: 6.75rem;
+  h2 {
+    color: $mainInfoTitle;
+    font-size: 1.125rem;
+  }
+  :nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $mainInfoSubTitle;
+    margin: 0.5rem 0 1.5rem 0;
+  }
+  :nth-child(3) {
+    color: $mainInfoMessage;
+  }
 }
