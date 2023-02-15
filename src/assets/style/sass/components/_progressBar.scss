@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+.progressBar {
+  position: absolute;
+  width: 17.875rem;
+  height: 1rem;
+  top: -0.5rem;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 1rem;
+  :nth-child(1) {
+    display: block;
+    width: 5.5rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: $complementaryBlue;
+  }
+  :nth-child(2) {
+    display: flex;
+    position: absolute;
+    top: -0.75rem;
+    left: 4.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+    border-radius: 2rem;
+    background-color: $complementaryBlue;
+    justify-content: center;
+    align-items: center;
+  }
+}

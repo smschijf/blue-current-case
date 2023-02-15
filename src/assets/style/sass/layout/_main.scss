@@ -1,0 +1,13 @@
+@use "../components/backButton";
+@use "../components/formInput";
+@use "../components/progressBar";
+@use "../abstracts" as *;
+
+main {
+  position: relative;
+  height: 53.5rem;
+  margin: 2.5rem 10.3rem 0 10.3rem;
+  padding: 0 2.5rem 0 2.5rem;
+  background-color: $mainBackgroundColor;
+  border-radius: 10px;
+}
