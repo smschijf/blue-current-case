@@ -6,7 +6,8 @@
 main {
   position: relative;
   height: 53.5rem;
-  margin: 2.5rem 10.3rem 0 10.3rem;
+  max-width: 69.375rem;
+  margin: 2.5rem 11.46% 0 11.46%;
   padding: 0 2.5rem 0 2.5rem;
   background-color: $mainBackground;
   border-radius: 10px;
@@ -15,4 +16,6 @@ main {
 
 .mainContent {
   height: 100%;
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
 }

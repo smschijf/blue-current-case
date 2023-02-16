@@ -1,5 +1,6 @@
 import MainInfo from './MainInfo';
 import MainProduct from './MainProduct';
+import MainForm from './MainForm';
 import arrowLeft from '../assets/img/long-arrow-left.svg';
 
 const Main = () => {
@@ -12,8 +13,8 @@ const Main = () => {
       <div className="mainContent">
         <MainInfo />
         <MainProduct />
+        <MainForm />
       </div>
-      <div className="mainForm"></div>
       <button className="backButton">
         <img src={arrowLeft} alt="Vorige"></img>
         <span>Vorige</span>

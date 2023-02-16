@@ -1,1 +1,5 @@
 @use "./variables" as *;
+
+@mixin formInput($width) {
+  width: $width;
+}

@@ -3,10 +3,9 @@
 
 .mainProduct {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr 1fr / 45% 55%;
+  grid-row: 2 / 3;
   row-gap: 2rem;
-  width: 50%;
-  height: 50%;
   .productImage {
     grid-row: 1 / 3;
     img {
