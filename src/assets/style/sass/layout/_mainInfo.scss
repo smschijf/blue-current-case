@@ -1,7 +1,8 @@
 @use "../abstracts" as *;
 
 .mainInfo {
-  width: 23.75rem;
+  width: 50%;
+  height: 50%;
   padding-top: 6.75rem;
   h2 {
     color: $mainInfoTitle;
