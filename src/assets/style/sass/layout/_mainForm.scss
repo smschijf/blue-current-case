@@ -50,17 +50,22 @@
       display: flex;
       justify-content: space-between;
       padding: 0 0.875rem 0 1rem;
-      border: none;
+      border: 1px solid $complementaryBlue;
       border-radius: 8px;
       background-color: $complementaryBlue;
       font-size: 1.125rem;
       font-weight: bold;
       color: #fff;
       align-items: center;
+      transition: 0.2s;
       cursor: pointer;
       img {
         height: 1rem;
       }
+    }
+    button[type=submit]:hover {
+      background-color: #fff;
+      color: $complementaryBlue;
     }
     a {
       display: flex;
