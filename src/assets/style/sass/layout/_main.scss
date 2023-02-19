@@ -6,7 +6,7 @@ main {
   position: relative;
   height: 53.5rem;
   max-width: 69.375rem;
-  margin: 2.5rem 11.46% 0 11.46%;
+  margin: 2.5rem 11.46% 12rem 11.46%;
   padding: 0 2.5rem 0 2.5rem;
   background-color: $mainBackground;
   border-radius: 10px;
@@ -17,4 +17,31 @@ main {
   height: 100%;
   display: grid;
   grid-template: 50% 50% / 50% 50%;
+  position: relative;
+}
+
+.backButton {
+  width: 7.625rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -1.375rem;
+  padding: 0 0.875rem 0 1rem;
+  border: 1px solid $complementaryBlue;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: $complementaryBlue;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+  img {
+    height: 1rem;
+  }
+}
+.backButton:hover {
+  background-color: $complementaryBlue;
+  color: #fff;
 }
