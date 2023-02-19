@@ -7,20 +7,72 @@
   padding: 3rem 4rem 1.5rem 2.4rem;
   background-color: #fff;
   border-radius: 8px;
-  .visuallyHidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
   .formSection {
     margin-bottom: 2rem;
-    .formInput {
-      @include formInput(100%);
+    h2 {
+      font-size: 1.125rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .inputGroup {
+      @include inputGroup(100%);
+    }
+    .inputGroupSmall {
+      @include inputGroup(40%);
+      display: inline-block;
+    }
+    .inputGroupMedium {
+      @include inputGroup(55%);
+      float: right;
+    }
+    :nth-child(2) {
+      margin-bottom: 1rem;
+    }
+  }
+  .formSectionSubmit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .visuallyHidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    button[type=submit] {
+      width: 60%;
+      min-width: 11rem;
+      height: 2.75rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.875rem 0 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: $complementaryBlue;
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: #fff;
+      align-items: center;
+      cursor: pointer;
+      img {
+        height: 1rem;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 0.875rem;
+      color: $submitSubInput;
+    }
+    p {
+      grid-column: 1 / 3;
+      font-size: 0.75rem;
+      margin-top: 0.3rem;
+      color: $submitInfo;
     }
   }
 }
