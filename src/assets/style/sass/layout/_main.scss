@@ -4,20 +4,40 @@
 
 main {
   position: relative;
-  height: 53.5rem;
+  height: 92.75rem;
   max-width: 69.375rem;
-  margin: 2.5rem 11.46% 12rem 11.46%;
-  padding: 0 2.5rem 0 2.5rem;
+  margin: 2.5rem 11.46% 4rem 11.46%;
+  padding: 0 1rem 0 1rem;
   background-color: $mainBackground;
   border-radius: 10px;
   font-family: "museo-sans", sans-serif;
+  @include mq(sm) {
+    height: 85.75rem;
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  @include mq(md) {
+    height: 72.75rem;
+  }
+  @include mq(lg) {
+    height: 53.5rem;
+    margin: 2.5rem 11.46% 12rem 11.46%;
+  }
 }
 
 .mainContent {
   height: 100%;
   display: grid;
-  grid-template: 50% 50% / 50% 50%;
+  grid-template: 18% 22% 60% / 100%;
   position: relative;
+  @include mq(xs) {
+    grid-template: 15% 22% 63% / 100%;
+  }
+  @include mq(md) {
+    grid-template: 28% 72% / 50% 50%;
+  }
+  @include mq(lg) {
+    grid-template: 50% 50% / 50% 50%;
+  }
 }
 
 .backButton {

@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-@mixin inputGroup($width, ) {
+@mixin inputGroup($width) {
   position: relative;
   width: $width;
   .input {
@@ -37,5 +37,25 @@
     line-height: 1.5rem;
     transform: translateY(0.938rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+$media: (
+  xs: 453px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  2xl: 1536px,
+  3xl: 1920px,
+);
+
+@mixin mq($breakpoint) {
+  @each $breakpoints, $size in $media {
+    @if $breakpoint==$breakpoints {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
   }
 }
