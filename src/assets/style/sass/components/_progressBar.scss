@@ -3,7 +3,8 @@
 
 .progressBar {
   position: absolute;
-  width: 100%;
+  width: 85%;
+  max-width: 17.875rem;
   height: 1rem;
   top: -0.5rem;
   z-index: 1;
@@ -14,16 +15,19 @@
   }
   :nth-child(1) {
     display: block;
-    width: 4.5rem;
+    width: 3.5rem;
     height: 100%;
     border-radius: 1rem;
     background-color: $complementaryBlue;
+    @include mq(xs) {
+      width: 4.5rem;
+    }
   }
   :nth-child(2) {
     display: flex;
     position: absolute;
     top: -0.75rem;
-    left: 3.875rem;
+    left: 2.875rem;
     width: 2.5rem;
     height: 2.5rem;
     color: #fff;
@@ -32,5 +36,8 @@
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
+    @include mq(xs) {
+      left: 3.875rem;
+    }
   }
 }
